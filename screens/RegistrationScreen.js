@@ -36,7 +36,7 @@ const Register = (props) => {
     try {
       const user = await createUser(email, password);
       console.log("loggin in ");
-      props.navigation.navigate("HomeScreen");
+      props.navigation.navigate("MainView");
     } catch (err) {
       alert(err.message);
       console.log("error happened");
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     //  paddingTop: 500,
-    backgroundColor: "#000000",
+    backgroundColor: "#F4F4F4",
     margin: "auto",
     alignItems: "center",
     justifyContent: "center",
@@ -85,21 +85,13 @@ const styles = StyleSheet.create({
   Image: {
     justifyContent: "center",
   },
-  //   input: {
-  //     margin: 15,
-  //     height: 40,
-  //     borderColor: "#FFA500",
-  //     borderWidth: 1,
-  //   },
   submitButton: {
-    width: "50%",
-    borderRadius: 25,
-    height: 30,
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 3,
-    marginTop: 10,
     backgroundColor: "#FFA500",
+    paddingVertical: 10,
+    borderRadius: 5,
+    alignItems: "center",
+    marginVertical: 20,
+    width: '50%',
   },
   submitButtonText: {
     color: "black",

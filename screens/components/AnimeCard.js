@@ -19,7 +19,6 @@ const AnimeCard = ({ item, navigation }) => {
         <Image source={{ uri: item.thumbnail, width: 80, height: 120 }} />
 
         <Text style={styles.cardTitle}>{item.name}</Text>
-       
       </TouchableOpacity>
     </View>
   );

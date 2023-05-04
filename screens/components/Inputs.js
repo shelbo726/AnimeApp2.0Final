@@ -11,34 +11,38 @@ import {
 
 const Inputs = (props) => {
   return (
-    <View style={styles.inputView}>
-      <TextInput
-        style={styles.TextInput}
-        placeholder={props.placeholder}
-        placeholderTextColor="#000000"
-        type={props.type}
-        color="black"
-        secureTextEntry={props.secure}
-        onChangeText={props.handler}
-      />
-    </View>
+    // <View style={styles.inputView}>
+    <TextInput
+      style={styles.textInput}
+      placeholder={props.placeholder}
+      placeholderTextColor="#000000"
+      type={props.type}
+      color="black"
+      secureTextEntry={props.secure}
+      onChangeText={props.handler}
+    />
+    // </View>
   );
 };
 
 const styles = StyleSheet.create({
-  inputView: {
-    backgroundColor: "#FFA500",
-    borderRadius: 30,
-    width: "70%",
-    height: 45,
-    marginBottom: 5,
-    marginTop: 5,
-    alignItems: "center",
-  },
-  TextInput: {
-    height: 50,
-    flex: 1,
+  textInput: {
+    backgroundColor: "#f7f7f8",
+    borderRadius: 5,
     padding: 10,
+    marginBottom: 20,
+    fontSize: 16,
+    fontWeight: "400",
+    color: "#333333",
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0,
+      height: 0.5,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 2,
+    elevation: 5,
+    width: "80%",
   },
 });
 

@@ -64,8 +64,6 @@ export const getComments = async (animeId) => {
      }
       
     })
-    console.log(document)
-    console.log(document.data())
     return document.data().comments
     
     } catch (e) {
@@ -86,8 +84,6 @@ export const addComment = async (animeId,newComment) => {
      }
       
     })
-    console.log(document)
-    console.log(document.data())
     let data=document.data()
     let commentsArr=[...data.comments,newComment]
 

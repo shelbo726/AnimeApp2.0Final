@@ -21,7 +21,7 @@ const GenreScreen = ({ route, navigation }) => {
       </Text>
       <FlatList
         data={item.animes}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.animeId}
         numColumns={2}
         renderItem={({ item }) => (
           <AnimeCard navigation={navigation} item={item} />
@@ -35,14 +35,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
 
-    backgroundColor: "#000000",
+    backgroundColor: "#F4F4F4",
     justifyContent: "center",
     paddingTop: 50,
   },
   Text: {
     fontSize: 30,
     fontFamily: "Arial",
-    color: "white",
+    color: '#333333',
     textAlign: "center",
   },
 });

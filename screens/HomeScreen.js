@@ -25,11 +25,11 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000000",
+    backgroundColor: "#F4F4F4",
     justifyContent: "center",
   },
   Text: {
-    color: "white",
+    color: '#333333',
     textAlign: "center",
   },
 });

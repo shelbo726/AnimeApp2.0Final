@@ -31,7 +31,7 @@ const LoginScreen = (props) => {
       console.log(loginUser);
       const user = await loginUser(email, password); //10000ms
       console.log(user);
-      props.navigation.navigate("HomeScreen");
+      props.navigation.navigate("MainView");
     } catch (err) {
       console.log(err.message);
       alert(err.message);
@@ -71,7 +71,7 @@ const LoginScreen = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000000",
+    backgroundColor: "#F4F4F4",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -96,16 +96,15 @@ const styles = StyleSheet.create({
   forgot_button: {
     height: 30,
     marginBottom: 30,
-    color: "white",
+    color: '#333333',
   },
   loginBtn: {
-    width: "80%",
-    borderRadius: 25,
-    height: 50,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 20,
     backgroundColor: "#FFA500",
+    paddingVertical: 10,
+    borderRadius: 5,
+    alignItems: "center",
+    marginVertical: 20,
+    width: '50%',
   },
 });
 
